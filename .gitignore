@@ -1,0 +1,8 @@
+node_modules
+.meteor/local
+typings
+client/bundle.js
+server/bundle.js
+
+# Editor files
+*.sublime-*

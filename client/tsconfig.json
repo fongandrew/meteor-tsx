@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "jsx": "react",
+    "outFile": "bundle.js"
+  },
+  "exclude": [
+    "node_modules",
+    ".meteor"
+  ]
+}

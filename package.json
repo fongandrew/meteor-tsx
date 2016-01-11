@@ -1,0 +1,29 @@
+{
+  "name": "meteor-tsx",
+  "version": "0.1.0",
+  "description": "Boilerplate for TypeScript / React / Meteor 1.2",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "cd client && tsc",
+    "watch-client": "cd client && tsc -w",
+    "build-server": "cd server && tsc",
+    "watch-server": "cd server && tsc -w",
+    "build": "parallelshell \"npm run build-client\" \"npm run build-server\"",
+    "watch": "parallelshell \"npm run watch-client\" \"npm run watch-server\"",
+    "start": "parallelshell \"npm run watch\" \"meteor\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fongandrew/meteor-tsx.git"
+  },
+  "author": "Andrew Fong <id@andrewfong.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fongandrew/meteor-tsx/issues"
+  },
+  "homepage": "https://github.com/fongandrew/meteor-tsx",
+  "devDependencies": {
+    "parallelshell": "^2.0.0",
+    "typescript": "^1.7.5"
+  }
+}
